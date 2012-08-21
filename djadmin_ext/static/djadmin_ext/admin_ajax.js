@@ -11,7 +11,7 @@ var AdminAjax = function($){
 
         self.setEvents = function(fields){
             $(fields).each(function(){
-                $('body').on('change', '#' + this, function(){
+                jQuery('body').on('change', '#' + this, function(){
                     self.getForm();
                 });
             });
